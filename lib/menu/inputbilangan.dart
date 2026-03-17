@@ -26,7 +26,8 @@ class _InputBilanganState extends State<InputBilangan> {
     final input = int.tryParse(_controller.text);
     if (input == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Masukkan angka yang valid!')),
+        SnackBar(
+          content: Text('Masukkan angka yang valid!'), backgroundColor: Colors.redAccent,),
       );
       return;
     }
